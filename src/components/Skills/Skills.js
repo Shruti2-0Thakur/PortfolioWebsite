@@ -52,7 +52,7 @@ function Skills() {
             <div className="skillsHeader">
                 <h2 style={{ color: theme.primary }}>Skills</h2>
             </div>
-            <p style={{ color: theme.tertiary }}>[Total Slides - 4]</p>
+            // <p style={{ color: theme.tertiary }}>[Total Slides - 4]</p>
             <div className="skillsContainer">
                 <Slider {...settings}>
                     {skillsCategories.map((category, index) => (
