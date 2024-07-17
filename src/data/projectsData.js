@@ -10,7 +10,7 @@ export const projectsData = [
     "Streamline hiring with our HR platform: unlimited job postings, 95% candidate accuracy, automated scheduling.",
     tags: [".Net, c#", "HTML & CSS", "API", "SQL"],
     code: "https://github.com/Shruti2-0Thakur/HR",
-    demo: "https://movie-pedia-mj.netlify.app/",
+    demo: "",
     image: hiring,
   },
   {
@@ -20,7 +20,7 @@ export const projectsData = [
     "Experience interactive learning with our platform: personalized courses, secure payments, engaging blog content, and streamlined account management.",
     tags: ["React.JS", "Node.js", "Rest API", "SQL"],
     code: "https://github.com/Shruti2-0Thakur/DreamSquare",
-    demo: "https://byte-builder.netlify.app",
+    demo: "",
     image: elearn,
   },
   {
