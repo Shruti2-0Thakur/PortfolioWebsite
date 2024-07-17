@@ -1,0 +1,261 @@
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 60vh;
+    padding: 2.5rem 2rem 2rem 2rem;
+    background-color: var(--primary30);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+
+
+
+.skillsHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.skillsHeader h2 {
+    font-family: var(--primaryFont);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3.5rem;
+    text-align: center;
+    
+}
+
+.skillsContainer {
+    width: 80%;
+    
+    padding: 0 ;
+}
+
+.skillsCategoryCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1.5rem;
+    border-radius: 15px;
+    background-color: var(--primary30);
+    transition: transform 0.3s ease-in-out;
+}
+
+.skillsCategoryCard h3 {
+    font-family: var(--primaryFont);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.skill--scroll {
+    width: 100%;
+}
+
+.skill--box {
+    background: #FAFAFA;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    width: 160px;
+    height: 160px;
+    margin: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.skill--box:hover {
+    transform: scale(1.15);
+}
+
+.skill--box > img {
+    height: 50px;
+    pointer-events: none;
+}
+
+.skill--box h3 {
+    font-family: Big Shoulders Text;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: var(--primary);
+}
+
+/* Media queries */
+@media (min-width: 992px) and (max-width: 1380px) {
+    .skills {
+        padding: 2rem 1rem 1rem 1rem;
+    }
+    .skillsContainer {
+        
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .skills {
+        padding: 1rem;
+        min-height: 100%;
+    }
+    .skillsContainer {
+       
+    }
+    .skillsHeader h2 {
+        font-size: 3.2rem;
+    }
+    .skillsCategoryCard h3 {
+        font-size: 2.2rem;
+    }
+    .skill--box {
+        width: 150px;
+        height: 150px;
+        margin: 1.2rem;
+        padding: 2rem 1rem;
+    }
+    .skill--box > img {
+        height: 45px;
+    }
+    .skill--box h3 {
+        font-size: 20px;
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .skills {
+        padding: 0.5rem;
+    }
+    .skillsContainer {
+        padding: 0.5rem;
+    }
+    .skillsHeader h2 {
+        font-size: 3rem;
+    }
+    .skillsCategoryCard h3 {
+        font-size: 2rem;
+    }
+    .skill--scroll {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .line .line-styling{
+        visibility: hidden;
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 50px;
+        width: 85%;
+      
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    .skillsContainer {
+        grid-template-columns: 1fr;
+    }
+    .skillsCategoryCard h3 {
+        font-size: 1.8rem;
+    }
+    .skill--box {
+        width: 135px;
+        height: 135px;
+        margin: 1.2rem;
+        padding: 2rem 1rem;
+    }
+    .skill--box > img {
+        height: 40px;
+    }
+    .skillsHeader h2 {
+        font-size: 2.5rem;
+    }
+    .skill--box h3 {
+        font-size: 18px;
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .skillsCategoryCard h3 {
+        font-size: 1.6rem;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
+    /* Styles for specific device resolutions */
+}
+
+@media only screen and (device-width: 768px) {
+    /* Styles for specific device widths */
+}
+.slick-prev, .slick-next {
+    background-color: black;
+}
+
+.slick-prev:before, .slick-next:before {
+    font-size: 40px;
+    color: #FAFAFA;
+    opacity: 1;
+}
+
+.slick-prev:hover:before, .slick-next:hover:before {
+    color: #FAFAFA;
+    opacity: 1;
+}
+
+/* Position the arrows outside the slider */
+.slick-prev {
+    left: -50px;
+}
+
+.slick-next {
+    right: -50px;
+}
+
+/* Custom arrow background */
+.slick-prev, .slick-next {
+    background-color: rgba(55, 183, 195, 0.4); /* Light Teal with opacity */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.slick-prev:hover, .slick-next:hover {
+    transform: scale(1.2);
+}
+
+/* Media queries for smaller screens */
+@media screen and (max-width: 768px) {
+    .slick-prev, .slick-next {
+        width: 30px;
+        height: 30px;
+    }
+    .slick-prev:before, .slick-next:before {
+        font-size: 30px;
+    }
+    .slick-prev {
+        left: -40px;
+    }
+    .slick-next {
+        right: -40px;
+    }
+}

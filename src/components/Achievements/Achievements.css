@@ -1,0 +1,121 @@
+/* achievements.css */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 6% 9%;
+    background-color: var(--theme-secondary);
+    color: var(--theme-tertiary);
+    flex-wrap: wrap;
+}
+
+.card {
+    color: var(--theme-secondary);
+    background-color: var(--theme-primary);
+    padding: 20px;
+    border-radius: 10px;
+    width: 48%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.card1 {
+    padding: 20px;
+    border-radius: 10px;
+    width: 48%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    background-color: var(--theme-secondary);
+    border: 2px solid var(--theme-secondary);
+}
+
+.cardTitle, .cardTitle1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid;
+    padding-bottom: 10px;
+}
+
+.cardTitle {
+    color: var(--theme-secondary);
+    border-color: var(--theme-secondary);
+}
+
+.cardTitle1 {
+    color: var(--theme-primary);
+    border-color: var(--theme-primary);
+}
+
+.cardContent {
+    font-size: 20px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.button {
+    background-color: var(--theme-primary);
+    color: var(--theme-tertiary);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+    background-color: var(--theme-secondary50);
+    transform: translateY(-2px);
+}
+
+.profileItem {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.profileImg {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.profileTitle {
+    font-size: 20px;
+    margin: 0;
+    color: var(--theme-primary);
+    margin-bottom: 10px;
+}
+
+.profileText {
+    font-size: 16px;
+    margin: 0;
+    color: var(--theme-tertiary70);
+    margin-bottom: 10px;
+}
+
+.modalContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 400px;
+    background-color: var(--theme-secondary);
+    border: 2px solid #000;
+    box-shadow: 24;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.modalImage {
+    width: 100%;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .card, .card1 {
+        width: 100%;
+    }
+}
